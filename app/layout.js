@@ -11,7 +11,25 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <title>Document Manage</title>
+        <meta name="description" content="Document management system" />
+      </head>
+      <body className={inter.className}>
+        <div data-theme="cupcake">
+          <header className="navbar bg-base-300 text-base-content fixed top-0 w-full">
+            <a className="btn btn-ghost normal-case text-xl">Document Manage</a>
+          </header>
+          <main>
+            {children}
+          </main>
+          <footer className="footer footer-center p-4 bg-base-300 text-base-content">
+            <div>
+              <p>Copyright © 2024 - All rights reserved by SE 2024 Teaching Group</p>
+            </div>
+          </footer>
+        </div>
+      </body>
     </html>
   );
 }
