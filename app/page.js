@@ -209,7 +209,7 @@ export default function DocumentManage() {
                             <button className="btn btn-error" onClick={deleteDocument}>
                                 Delete
                             </button>
-                            <button className="btn btn-ghost ml-3">Close</button>
+                            <button className="btn btn-ghost ml-3" onClick={toggleDeleteModal}>Close</button>
                         </div>
                     </div>
                 </form>
